@@ -1,41 +1,26 @@
-# Batalha Naval em C
+# Movimentação de Peças de Xadrez em C
 
-Projeto desenvolvido como parte da disciplina de Programação em C da Estácio, com o objetivo de aplicar lógica condicional, laços e arrays.
+Projeto da disciplina de Programação em C da Estácio, com o objetivo de simular movimentos possíveis de peças do xadrez em um tabuleiro 8x8.
 
-## 🎯 Objetivo
+## ✅ Peças Suportadas
 
-Simular uma versão simples do jogo Batalha Naval em um tabuleiro 5x5 com 3 navios posicionados aleatoriamente. O jogador realiza jogadas até destruir todos os navios.
+- rei
+- rainha
+- torre
+- bispo
+- cavalo
+- peao
 
-## 🔧 Como funciona
+## 📥 Entrada
+- Nome da peça
+- Posição da peça (ex: D5)
 
-- Tabuleiro 5x5
-- 3 navios escondidos
-- O jogador digita posições como `A3`, `D5` etc.
-- O programa responde com:
-  - 💥 Acertou
-  - 🌊 Água
-  - Já atirou aqui
+## 📤 Saída
+- Lista de posições possíveis de movimento
 
-## 🖥️ Como compilar
+## 💻 Como compilar
 
 ```bash
-gcc batalha_naval.c -o batalha_naval
-./batalha_naval
+gcc movimentacao_xadrez.c -o movimentacao_xadrez
+./movimentacao_xadrez
 ```
-
-## 📌 Exemplo de execução
-
-```
-Digite sua jogada (ex: B3): C2
-🌊 Água...
-
-Digite sua jogada (ex: B3): A5
-💥 ACERTOU o navio!
-
-🎉 PARABÉNS! Você afundou todos os navios em 9 tentativas.
-```
-
-## 📂 Arquivos
-
-- `batalha_naval.c` – Código-fonte principal
-- `README.md` – Explicação do projeto e instruções
